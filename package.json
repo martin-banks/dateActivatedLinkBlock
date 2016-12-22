@@ -1,0 +1,32 @@
+{
+  "name": "dateActivatedLinkBlock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "watchjs": "watchify ./src/scripts/app.js -o ./build/scripts/app.js -t [ babelify --presets [es2015] ]",
+    "watchsass": "sass --watch src/styles:build/styles",
+    "uglyjs": "uglifyjs -m --stats build/scripts/app.js -o build/scripts/app.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martin-banks/dateActivatedLinkBlock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martin-banks/dateActivatedLinkBlock/issues"
+  },
+  "homepage": "https://github.com/martin-banks/dateActivatedLinkBlock#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babelify": "^7.3.0",
+    "browsify": "0.0.4",
+    "watchify": "^3.7.0"
+  }
+}
+
+
+
+
